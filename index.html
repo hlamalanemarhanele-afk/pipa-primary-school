@@ -15,7 +15,7 @@ body{background:#0f172a;color:#1e293b}
 .badge-top{background:#fbbf24;color:#000;display:inline-block;padding:6px 12px;border-radius:999px;font-size:10px;font-weight:900}
 .hero h1{font-size:32px;line-height:1.1;margin:14px 0;font-weight:900}
 .hero span{color:#fbbf24}
-.btn-y{background:#fbbf24;color:#000;border:none;padding:11px 24px;border-radius:999px;font-weight:900;margin-top:10px}
+.btn-y{background:#fbbf24;color:#000;border:none;padding:11px 24px;border-radius:999px;font-weight:900;margin-top:10px;cursor:pointer}
 .stats{background:#fbbf24;border-radius:16px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;padding:14px 6px;margin:0 8px;transform:translateY(-16px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
 .stat{text-align:center;border-right:1px solid rgba(0,0,0,.12)} .stat:last-child{border:none}
 .stat b{font-size:20px;display:block;color:#000} .stat small{font-size:10px;font-weight:800;color:#000;display:block}
@@ -31,27 +31,26 @@ body{background:#0f172a;color:#1e293b}
 .history h3{font-size:16px;font-weight:900;margin-bottom:8px;color:#0f172a}
 .history p{font-size:12px;line-height:1.6;color:#334155;margin-bottom:10px}
 .nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e2e8f0;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;padding:8px 0;z-index:30;border-radius:20px 20px 0 0}
-.nav a{text-align:center;text-decoration:none;color:#94a3b8;font-size:10px;font-weight:700} .nav a.active{color:#0f172a} .nav b{font-size:18px;display:block}
-/* ONLY MENU ADDED - NO DESIGN CHANGE */
+.nav a{text-align:center;text-decoration:none;color:#94a3b8;font-size:10px;font-weight:700;cursor:pointer} .nav a.active{color:#0f172a} .nav b{font-size:18px;display:block}
+/* ONLY MENU + BOTTOM NAV FIX - NO DESIGN CHANGE */
 .drawer{position:fixed;top:0;right:-100%;width:78%;max-width:300px;height:100%;background:#fff;z-index:100;transition:.3s;padding:22px;box-shadow:-10px 0 30px rgba(0,0,0,.3)}
 .drawer.open{right:0}
-.drawer a{display:block;padding:14px 0;border-bottom:1px solid #eee;text-decoration:none;color:#0f172a;font-weight:800;font-size:14px}
+.drawer a{display:block;padding:14px 0;border-bottom:1px solid #eee;text-decoration:none;color:#0f172a;font-weight:800;font-size:14px;cursor:pointer}
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;z-index:90}
 .overlay.show{display:block}
 .close-x{text-align:right;font-size:24px;cursor:pointer;margin-bottom:10px}
 </style>
 </head>
 <body>
-<!-- ONLY MENU ADDED -->
 <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-<div class="drawer" id="drawer"><div class="close-x" onclick="closeMenu()">✕</div><a href="#home" onclick="closeMenu()">🏠 Home</a><a href="#news" onclick="closeMenu()">📰 News</a><a href="#about" onclick="closeMenu()">📖 Our Story</a><a href="#contact" onclick="closeMenu()">📞 Contact Us</a></div>
+<div class="drawer" id="drawer"><div class="close-x" onclick="closeMenu()">✕</div><a onclick="goTo('home')">🏠 Home</a><a onclick="goTo('news')">📰 Latest News</a><a onclick="goTo('events')">📅 Events</a><a onclick="goTo('about')">📖 Our Story</a><a onclick="goTo('contact')">📞 Contact Us</a></div>
 
 <div class="top" id="home"><img src="logo.jpg" class="logo" alt="Pipa Logo"><button class="menu" onclick="openMenu()">Menu ☰</button></div>
-<div class="hero"><div class="badge-top">MAPHALLE VILLAGE • LIMPOPO • EST 1938</div><h1>Excellence in innovative<br>quality basic <span>education</span></h1><button class="btn-y">Discover</button></div>
+<div class="hero"><div class="badge-top">MAPHALLE VILLAGE • LIMPOPO • EST 1938</div><h1>Excellence in innovative<br>quality basic <span>education</span></h1><button class="btn-y" onclick="goTo('news')">Discover</button></div>
 <div class="stats"><div class="stat"><b>🎓</b><b>1491</b><small>Learners</small></div><div class="stat"><b>👨‍🏫</b><b>41</b><small>Educators</small></div><div class="stat"><b>🏫</b><b>25</b><small>Classrooms</small></div><div class="stat"><b>🚫</b><b>No fees</b><small>Quintile 1</small></div></div>
 <div class="content">
 <div class="head" id="news"><h3>Latest News & Updates</h3><a>See all ›</a></div>
-<div class="card"><img src="p2.jpg"><div class="body"><span class="tag n">NEWS</span><h4>New Library Opens for Learners</h4><small>15 Oct 2024 • 2 min read</small><p>A new library facility now available to support learning and research at Pipa Primary.</p></div></div>
+<div class="card" id="events"><img src="p2.jpg"><div class="body"><span class="tag n">NEWS</span><h4>New Library Opens for Learners</h4><small>15 Oct 2024 • 2 min read</small><p>A new library facility now available to support learning and research at Pipa Primary.</p></div></div>
 <div class="card"><img src="p5.jpg"><div class="body"><span class="tag e">EVENT</span><h4>Sports Day 2024 Highlights</h4><small>08 Oct 2024 • 3 min read</small><p>Annual sports day celebrated teamwork and community spirit in Maphalle Village.</p></div></div>
 <div class="card"><img src="p9.jpg"><div class="body"><span class="tag a">ACADEMICS</span><h4>Grade 7 Results Released</h4><small>01 Oct 2024 • 2 min read</small><p>Congratulations to our Grade 7 class on outstanding performance — 94-96% pass rate.</p></div></div>
 <div class="history" id="about"><h3>Historical Background of Pipa Primary School</h3><p>The school was established in 1938 as an off-shoot of Medingeni primary school. The school offered only Sub A and Sub B. The school was under the Principalship of Mr Sesweni. The school was closed in 1945 because Children were not attending classes as they were forced by parents to head different life stocks.</p><p>The school later reopen and relocated to a new site in 1965. The school was under the leadership of Mr Mancha Stephen Mochike until he passed on in 1982. Mr Makgwana Lazarus Motshekga took over the leadership of the school in 1983 until he retired in 2005.</p><p>Mr Motshekga was succeeded by Mr Mothoka Ben Machipi in 2006. Mr Matshipi was seconded full time to Professional Educators Union (PEU) in 2010 and that gave Mr Seja Stan Makgalo to act as the Principal until he retired in 2024.</p><p>Mrs Matsatsi Jelos Mohale took over as the acting Principal with assistance of Mr Poncho Mabotja. From 8 April 2025, Dr Matshipi M.G leads the school with 41 educators and 1491 learners. No school fees. Quintile 1. Section 21 Yes.</p></div>
@@ -59,10 +58,11 @@ body{background:#0f172a;color:#1e293b}
 <div class="card"><img src="p11.jpg"><div class="body"><span class="tag e">LEARNERS</span><h4>1491 Learners 2026</h4><small>R to 7 • 761 Boys 730 Girls</small><p>No fees, Section 21 Yes. Sepedi + English CAPS. Quintile 1.</p></div></div>
 <div style="margin-top:14px;padding:12px;background:#0f172a;border-radius:12px;color:#cbd5e1" id="contact"><h4 style="color:#fbbf24;font-size:13px">Pipa Primary School — Arise and Shine</h4><p style="font-size:11px;margin-top:6px;line-height:1.5">92 Blinkwater Rd, Maphalle Village 0834, Mopani East, Limpopo<br>EMIS 0908921262 • Quintile 1 No Fee • Section 21 Yes • Est 1938<br>Principal: Dr Matshipi M.G • Deputy: Mabotja P.G • 0785112159<br>PIPAprimary@school.limpopo.gov.za • SGB elected SASA 84 of 1996</p></div>
 </div>
-<div class="nav"><a class="active"><b>🏠</b>Home</a><a><b>📅</b>Events</a><a><b>🔔</b>Notices</a><a><b>👤</b>Contact</a></div>
+<div class="nav"><a id="nav-home" class="active" onclick="goTo('home')"><b>🏠</b>Home</a><a id="nav-events" onclick="goTo('events')"><b>📅</b>Events</a><a id="nav-about" onclick="goTo('about')"><b>🔔</b>Notices</a><a id="nav-contact" onclick="goTo('contact')"><b>👤</b>Contact</a></div>
 <script>
 function openMenu(){document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('show')}
 function closeMenu(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('show')}
+function goTo(id){closeMenu();const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'});document.querySelectorAll('.nav a').forEach(a=>a.classList.remove('active'));const nav=document.getElementById('nav-'+(id==='news'?'home':id));if(nav)nav.classList.add('active')}
 </script>
 </body>
 </html>
