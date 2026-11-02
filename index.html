@@ -4,16 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pipa Primary School - Arise and Shine - Est 1938</title>
-<meta property="og:title" content="Pipa Primary School">
-<meta property="og:description" content="Excellence in innovative quality basic education - Maphalle Village, Limpopo, Est 1938. 1491 Learners, 41 Educators, 25 Classrooms, No Fees">
-<meta property="og:image" content="https://hlamalanemarhanele-afk.github.io/pipa-primary-school/logo.png">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial,sans-serif;background:#f5f5f5}
 .top{background:#FFEB3B;text-align:center;padding:6px;font-size:12px;font-weight:bold}
-.header{background:#111;display:flex;justify-content:space-between;align-items:center;padding:10px 15px;color:white;position:sticky;top:0;z-index:30}
+.header{background:#111;display:flex;justify-content:space-between;align-items:center;padding:10px 15px;color:white}
 .header img{height:45px;background:white;border-radius:50%;padding:2px}
-.menu{background:#FFEB3B;border:none;padding:8px 16px;font-weight:bold;border-radius:4px;cursor:pointer}
+.menu{background:#FFEB3B;border:none;padding:8px 16px;font-weight:bold;border-radius:4px}
 .hero{background:#222;color:white;padding:25px 15px}
 .badge{background:#FFEB3B;color:black;display:inline-block;padding:4px 10px;font-size:11px;font-weight:bold;margin-bottom:10px}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
@@ -25,34 +22,16 @@ body{font-family:Arial,sans-serif;background:#f5f5f5}
 .history{background:white;margin:15px;padding:15px;border-radius:8px;line-height:1.6}
 .history h3{margin-bottom:10px}
 .footer{background:#111;color:white;text-align:center;padding:15px;font-size:12px;margin-top:15px}
-.drawer{position:fixed;top:0;right:-100%;width:80%;max-width:320px;height:100%;background:white;z-index:100;transition:0.3s;padding:20px;box-shadow:-10px 0 30px rgba(0,0,0,0.3)}
-.drawer.open{right:0}
-.drawer a{display:block;padding:16px 0;border-bottom:1px solid #eee;text-decoration:none;color:#111;font-weight:700;font-size:16px}
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;z-index:90}
-.overlay.show{display:block}
-.close-x{font-size:24px;text-align:right;cursor:pointer;padding-bottom:10px;color:#111}
 </style>
 </head>
 <body>
-<div class="overlay" id="overlay" onclick="closeMenu()"></div>
-<div class="drawer" id="drawer">
-<div class="close-x" onclick="closeMenu()">✕</div>
-<a href="#home" onclick="closeMenu()">Home</a>
-<a href="#about" onclick="closeMenu()">Our Story</a>
-<a href="#gallery" onclick="closeMenu()">Gallery</a>
-<a href="#learning" onclick="closeMenu()">Learning</a>
-<a href="#team" onclick="closeMenu()">Our Team</a>
-<a href="#support" onclick="closeMenu()">Support Us</a>
-<a href="#contact" onclick="closeMenu()">Contact Us</a>
-</div>
-
-<div class="top" id="home">MAPHALLE VILLAGE • LIMPOPO • EST 1938</div>
+<div class="top">MAPHALLE VILLAGE • LIMPOPO • EST 1938</div>
 <div class="header">
 <div style="display:flex;align-items:center;gap:10px">
-<img src="logo.png" onerror="this.src='https://via.placeholder.com/100?text=PIPA'" alt="Pipa Logo">
+<img src="logo.jpg" alt="Pipa Logo">
 <div><b>Pipa Primary</b><br><small>Arise and Shine</small></div>
 </div>
-<button class="menu" onclick="openMenu()">Menu ☰</button>
+<button class="menu">Menu</button>
 </div>
 <div class="hero">
 <div class="badge">Excellence in innovative quality basic education</div>
@@ -65,29 +44,29 @@ body{font-family:Arial,sans-serif;background:#f5f5f5}
 <div class="stat"><b>No fees</b><br>Quintile 1</div>
 </div>
 </div>
-<div class="history" id="about">
+<div class="history">
 <h3>Historical Background</h3>
 <p>Pipa Primary School is situated at Maphalle village, ward 24, under Mopani East. Greater Letaba Municipality, Mopani District in Limpopo Province. The school started in 1938 as a farm school. Mr Sesweni (a farm owner) started it with community. It was closed in 1945 because of labour problems.</p>
 <p style="margin-top:10px">In 1965 the school was reopened under farm owner Mr P Mochike. Mr Motshekga became first principal until 1989. Mr Matshipi M.G took over from 1990.</p>
 <p style="margin-top:10px">In 2006, Mr Matshipi was seconded full time to Professional Educators Union (PEU) in 2010 and that gave Mr Seja Stan Makgalo to act as the Principal until he retired in 2024.</p>
 <p style="margin-top:10px"><b>Mrs Matsatsi Jelos Mohale took over as the acting Principal with assistance of Mr Poncho Mabotja. From 8 April 2025, Dr Matshipi M.G leads the school with 41 educators and 1491 learners. No school fees. Quintile 1. Section 21 Yes.</b></p>
 </div>
-<div class="news" id="gallery">
+<div class="news">
 <h3>Latest News & Updates</h3>
 <div class="card">
-<img src="p2.jpg" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800'" alt="School building">
+<img src="p2.jpg" alt="School building">
 <div class="card-body"><b>Pipa Primary School 2026</b><br><small>Maphalle Village school building</small></div>
 </div>
 <div class="card">
-<img src="p11.jpg" onerror="this.src='https://images.unsplash.com/photo-1588072432836-e10032774350?w=800'" alt="Learners">
+<img src="p11.jpg" alt="Learners">
 <div class="card-body"><b>1491 Learners 2026</b><br><small>41 Educators leading excellence</small></div>
 </div>
 <div class="card">
-<img src="p10.jpg" onerror="this.src='https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800'" alt="Awards">
+<img src="p10.jpg" alt="Awards">
 <div class="card-body"><b>Awards & Medals Day</b><br><small>Celebrating academic excellence</small></div>
 </div>
 </div>
-<div class="footer" id="contact">
+<div class="footer">
 <b>Pipa Primary School</b><br>
 EMIS: 0908921262<br>
 Dr Matshipi M.G - Principal<br>
@@ -95,9 +74,5 @@ Dr Matshipi M.G - Principal<br>
 92 Blinkwater Rd • Est 1938<br>
 Arise and Shine
 </div>
-<script>
-function openMenu(){document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('show')}
-function closeMenu(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('show')}
-</script>
 </body>
 </html>
