@@ -1,78 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pipa Primary School - Arise and Shine - Est 1938</title>
+<link rel="icon" href="logo.jpg">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#f5f5f5}
-.top{background:#FFEB3B;text-align:center;padding:6px;font-size:12px;font-weight:bold}
-.header{background:#111;display:flex;justify-content:space-between;align-items:center;padding:10px 15px;color:white}
-.header img{height:45px;background:white;border-radius:50%;padding:2px}
-.menu{background:#FFEB3B;border:none;padding:8px 16px;font-weight:bold;border-radius:4px}
-.hero{background:#222;color:white;padding:25px 15px}
-.badge{background:#FFEB3B;color:black;display:inline-block;padding:4px 10px;font-size:11px;font-weight:bold;margin-bottom:10px}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
-.stat{background:#FFEB3B;color:black;padding:12px;border-radius:6px;text-align:center}
-.news{padding:15px}
-.card{background:white;border-radius:8px;overflow:hidden;margin-bottom:15px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
-.card img{width:100%;height:180px;object-fit:cover}
-.card-body{padding:12px}
-.history{background:white;margin:15px;padding:15px;border-radius:8px;line-height:1.6}
-.history h3{margin-bottom:10px}
-.footer{background:#111;color:white;text-align:center;padding:15px;font-size:12px;margin-top:15px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,Segoe UI,sans-serif}
+body{background:#0f172a;color:#1e293b}
+.top{position:sticky;top:0;z-index:20;background:#fff;border-radius:0 0 22px 22px;margin:8px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.logo{height:52px}
+.menu{background:#fbbf24;color:#000;padding:8px 18px;border-radius:999px;font-weight:900;font-size:14px;border:none}
+.hero{position:relative;margin:-60px 8px 0 8px;padding:90px 16px 24px 16px;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(15,23,42,.45),rgba(15,23,42,.92)),url('p11.jpg');background-size:cover;background-position:center;color:#fff;min-height:360px}
+.badge-top{background:#fbbf24;color:#000;display:inline-block;padding:6px 12px;border-radius:999px;font-size:10px;font-weight:900}
+.hero h1{font-size:32px;line-height:1.1;margin:14px 0;font-weight:900}
+.hero span{color:#fbbf24}
+.btn-y{background:#fbbf24;color:#000;border:none;padding:11px 24px;border-radius:999px;font-weight:900;margin-top:10px}
+.stats{background:#fbbf24;border-radius:16px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;padding:14px 6px;margin:0 8px;transform:translateY(-16px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.stat{text-align:center;border-right:1px solid rgba(0,0,0,.12)} .stat:last-child{border:none}
+.stat b{font-size:20px;display:block;color:#000} .stat small{font-size:10px;font-weight:800;color:#000;display:block}
+.content{background:#fff;margin-top:-8px;border-radius:26px 26px 0 0;padding:18px 14px 90px 14px}
+.head{display:flex;justify-content:space-between;align-items:center;margin:4px 0 12px 0} .head h3{font-size:19px;font-weight:900} .head a{color:#f59e0b;font-weight:800;font-size:12px;text-decoration:none}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;display:flex;overflow:hidden;margin-bottom:12px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.card img{width:96px;height:96px;object-fit:cover;margin:8px;border-radius:10px}
+.body{padding:10px 10px 10px 2px;flex:1}
+.tag{display:inline-block;padding:3px 8px;border-radius:6px;font-size:9px;font-weight:900;margin-bottom:4px}
+.n{background:#fef3c7;color:#92400e} .e{background:#fef9c3;color:#854d0e} .a{background:#dbeafe;color:#1e40af}
+.body h4{font-size:13px;font-weight:800;line-height:1.2} .body small{font-size:11px;color:#64748b} .body p{font-size:11px;color:#334155;margin-top:4px;line-height:1.35}
+.history{background:#f8fafc;border:1px solid #e2e8f0;border-radius:16px;padding:16px;margin:18px 0}
+.history h3{font-size:16px;font-weight:900;margin-bottom:8px;color:#0f172a}
+.history p{font-size:12px;line-height:1.6;color:#334155;margin-bottom:10px}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e2e8f0;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;padding:8px 0;z-index:30;border-radius:20px 20px 0 0}
+.nav a{text-align:center;text-decoration:none;color:#94a3b8;font-size:10px;font-weight:700} .nav a.active{color:#0f172a} .nav b{font-size:18px;display:block}
 </style>
 </head>
 <body>
-<div class="top">MAPHALLE VILLAGE • LIMPOPO • EST 1938</div>
-<div class="header">
-<div style="display:flex;align-items:center;gap:10px">
-<img src="logo.jpg" alt="Pipa Logo">
-<div><b>Pipa Primary</b><br><small>Arise and Shine</small></div>
+<div class="top"><img src="logo.jpg" class="logo" alt="Pipa Logo"><button class="menu">Menu ☰</button></div>
+<div class="hero"><div class="badge-top">MAPHALLE VILLAGE • LIMPOPO • EST 1938</div><h1>Excellence in innovative<br>quality basic <span>education</span></h1><button class="btn-y">Discover</button></div>
+<div class="stats"><div class="stat"><b>🎓</b><b>1491</b><small>Learners</small></div><div class="stat"><b>👨‍🏫</b><b>41</b><small>Educators</small></div><div class="stat"><b>🏫</b><b>25</b><small>Classrooms</small></div><div class="stat"><b>🚫</b><b>No fees</b><small>Quintile 1</small></div></div>
+<div class="content">
+<div class="head"><h3>Latest News & Updates</h3><a>See all ›</a></div>
+<div class="card"><img src="p2.jpg"><div class="body"><span class="tag n">NEWS</span><h4>New Library Opens for Learners</h4><small>15 Oct 2024 • 2 min read</small><p>A new library facility now available to support learning and research at Pipa Primary.</p></div></div>
+<div class="card"><img src="p5.jpg"><div class="body"><span class="tag e">EVENT</span><h4>Sports Day 2024 Highlights</h4><small>08 Oct 2024 • 3 min read</small><p>Annual sports day celebrated teamwork and community spirit in Maphalle Village.</p></div></div>
+<div class="card"><img src="p9.jpg"><div class="body"><span class="tag a">ACADEMICS</span><h4>Grade 7 Results Released</h4><small>01 Oct 2024 • 2 min read</small><p>Congratulations to our Grade 7 class on outstanding performance — 94-96% pass rate.</p></div></div>
+<div class="history"><h3>Historical Background of Pipa Primary School</h3><p>The school was established in 1938 as an off-shoot of Medingeni primary school. The school offered only Sub A and Sub B. The school was under the Principalship of Mr Sesweni. The school was closed in 1945 because Children were not attending classes as they were forced by parents to head different life stocks.</p><p>The school later reopen and relocated to a new site in 1965. The school was under the leadership of Mr Mancha Stephen Mochike until he passed on in 1982. Mr Makgwana Lazarus Motshekga took over the leadership of the school in 1983 until he retired in 2005.</p><p>Mr Motshekga was succeeded by Mr Mothoka Ben Machipi in 2006. Mr Matshipi was seconded full time to Professional Educators Union (PEU) in 2010 and that gave Mr Seja Stan Makgalo to act as the Principal until he retired in 2024.</p><p>Mrs Matsatsi Jelos Mohale took over as the acting Principal with assistance of Mr Poncho Mabotja. From 8 April 2025, Dr Matshipi M.G leads the school with 41 educators and 1491 learners. No school fees. Quintile 1. Section 21 Yes.</p></div>
+<div class="card"><img src="p10.jpg"><div class="body"><span class="tag a">AWARDS</span><h4>Awards & Medals Day</h4><small>Arise and Shine</small><p>Learners receiving awards and medals — professionalism, honesty, discipline, respect, fairness.</p></div></div>
+<div class="card"><img src="p11.jpg"><div class="body"><span class="tag e">LEARNERS</span><h4>1491 Learners 2026</h4><small>R to 7 • 761 Boys 730 Girls</small><p>No fees, Section 21 Yes. Sepedi + English CAPS. Quintile 1.</p></div></div>
+<div style="margin-top:14px;padding:12px;background:#0f172a;border-radius:12px;color:#cbd5e1"><h4 style="color:#fbbf24;font-size:13px">Pipa Primary School — Arise and Shine</h4><p style="font-size:11px;margin-top:6px;line-height:1.5">92 Blinkwater Rd, Maphalle Village 0834, Mopani East, Limpopo<br>EMIS 0908921262 • Quintile 1 No Fee • Section 21 Yes • Est 1938<br>Principal: Dr Matshipi M.G • Deputy: Mabotja P.G • 0785112159<br>PIPAprimary@school.limpopo.gov.za • SGB elected SASA 84 of 1996</p></div>
 </div>
-<button class="menu">Menu</button>
-</div>
-<div class="hero">
-<div class="badge">Excellence in innovative quality basic education</div>
-<h2>Pipa Primary School</h2>
-<p style="margin:10px 0;font-size:14px">Historic school established 1938 in Maphalle Village. Serving community with quality education.</p>
-<div class="stats">
-<div class="stat"><b>1491</b><br>Learners</div>
-<div class="stat"><b>41</b><br>Educators</div>
-<div class="stat"><b>25</b><br>Classrooms</div>
-<div class="stat"><b>No fees</b><br>Quintile 1</div>
-</div>
-</div>
-<div class="history">
-<h3>Historical Background</h3>
-<p>Pipa Primary School is situated at Maphalle village, ward 24, under Mopani East. Greater Letaba Municipality, Mopani District in Limpopo Province. The school started in 1938 as a farm school. Mr Sesweni (a farm owner) started it with community. It was closed in 1945 because of labour problems.</p>
-<p style="margin-top:10px">In 1965 the school was reopened under farm owner Mr P Mochike. Mr Motshekga became first principal until 1989. Mr Matshipi M.G took over from 1990.</p>
-<p style="margin-top:10px">In 2006, Mr Matshipi was seconded full time to Professional Educators Union (PEU) in 2010 and that gave Mr Seja Stan Makgalo to act as the Principal until he retired in 2024.</p>
-<p style="margin-top:10px"><b>Mrs Matsatsi Jelos Mohale took over as the acting Principal with assistance of Mr Poncho Mabotja. From 8 April 2025, Dr Matshipi M.G leads the school with 41 educators and 1491 learners. No school fees. Quintile 1. Section 21 Yes.</b></p>
-</div>
-<div class="news">
-<h3>Latest News & Updates</h3>
-<div class="card">
-<img src="p2.jpg" alt="School building">
-<div class="card-body"><b>Pipa Primary School 2026</b><br><small>Maphalle Village school building</small></div>
-</div>
-<div class="card">
-<img src="p11.jpg" alt="Learners">
-<div class="card-body"><b>1491 Learners 2026</b><br><small>41 Educators leading excellence</small></div>
-</div>
-<div class="card">
-<img src="p10.jpg" alt="Awards">
-<div class="card-body"><b>Awards & Medals Day</b><br><small>Celebrating academic excellence</small></div>
-</div>
-</div>
-<div class="footer">
-<b>Pipa Primary School</b><br>
-EMIS: 0908921262<br>
-Dr Matshipi M.G - Principal<br>
-0785112159 • Maphalle Village<br>
-92 Blinkwater Rd • Est 1938<br>
-Arise and Shine
-</div>
+<div class="nav"><a class="active"><b>🏠</b>Home</a><a><b>📅</b>Events</a><a><b>🔔</b>Notices</a><a><b>👤</b>Contact</a></div>
 </body>
 </html>
