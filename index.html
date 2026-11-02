@@ -3,116 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pipa Primary School</title>
+<title>Pipa Primary School - Excellence in innovative quality basic education</title>
 <meta property="og:title" content="Pipa Primary School">
-<meta property="og:description" content="Pipa Primary School is a no-fee public primary school in Maphalle Village, Limpopo, serving 1491 learners from Grade R to 7. Arise and Shine - Est 1938.">
+<meta property="og:description" content="Excellence in innovative quality basic education - Maphalle Village, Limpopo, Est 1938. 1491 Learners, 41 Educators, 25 Classrooms, No Fees">
 <meta property="og:image" content="https://hlamalanemarhanele-afk.github.io/pipa-primary-school/logo.png">
-<meta property="og:url" content="https://hlamalanemarhanele-afk.github.io/pipa-primary-school/">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
-body{background:#f6f8ff;color:#0f1f4d}
-header{position:sticky;top:0;z-index:50;background:white;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;box-shadow:0 2px 10px rgba(0,0,0,0.08)}
-.logo-wrap{display:flex;align-items:center;gap:10px}
-.logo-wrap img{width:44px;height:44px;border-radius:50%}
-.menu-btn{font-size:24px;background:none;border:none;cursor:pointer}
-.drawer{position:fixed;top:0;right:-100%;width:78%;max-width:300px;height:100%;background:white;z-index:100;transition:0.3s;padding:20px;box-shadow:-5px 0 20px rgba(0,0,0,0.2)}
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+body{background:#0a1230;color:#111}
+.top-header{background:white;border-radius:0 0 24px 24px;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;position:sticky;top:0;z-index:30;box-shadow:0 4px 20px rgba(0,0,0,0.15)}
+.logo img{height:58px}
+.menu-btn{background:#ffcc33;border:none;padding:10px 22px;border-radius:28px;font-weight:800;font-size:16px;cursor:pointer}
+.hero{position:relative;height:480px;background:#0a1230;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1588072432836-e10032774350?w=800') center/cover;opacity:0.9}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom, rgba(10,18,48,0.2), rgba(10,18,48,0.85))}
+.badge{position:relative;z-index:2;background:#ffcc33;color:#0a1230;font-weight:800;font-size:12px;padding:8px 14px;border-radius:20px;display:inline-block;margin:18px 16px 0}
+.hero-content{position:relative;z-index:2;padding:20px 20px 0;color:white}
+.hero-content h1{font-size:42px;line-height:0.95;font-weight:900}
+.hero-content h1 span{color:#ffcc33}
+.discover{margin-top:20px;background:#ffcc33;border:none;padding:14px 28px;border-radius:28px;font-weight:800;font-size:16px;cursor:pointer}
+.stats-bar{background:#ffcc33;border-radius:20px;margin:-26px 12px 0;position:relative;z-index:5;display:flex;justify-content:space-around;padding:16px 8px;text-align:center}
+.stat b{font-size:22px;display:block} .stat span{font-size:12px;font-weight:600}
+.divider{width:1px;background:rgba(0,0,0,0.15)}
+.news-section{background:white;border-radius:24px 24px 0 0;margin-top:18px;padding:18px 14px;min-height:400px}
+.news-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.news-header h2{font-size:20px;font-weight:800}
+.news-card{border:1px solid #e8e8e8;border-radius:18px;padding:10px;display:flex;gap:12px;background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
+.news-card img{width:110px;height:90px;object-fit:cover;border-radius:12px}
+.news-tag{background:#fff4d0;color:#8a6500;font-size:10px;font-weight:800;padding:3px 8px;border-radius:8px;display:inline-block;margin-bottom:6px}
+.drawer{position:fixed;top:0;right:-100%;width:80%;max-width:320px;height:100%;background:white;z-index:100;transition:0.3s;padding:20px;box-shadow:-10px 0 30px rgba(0,0,0,0.3)}
 .drawer.open{right:0}
-.drawer a{display:block;padding:14px 0;border-bottom:1px solid #eef1f8;text-decoration:none;color:#0a1a4a;font-weight:600}
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.4);display:none;z-index:90}
-.overlay.show{display:block}
-.hero{background:#0a1a4a;color:white;padding:28px 18px;position:relative;overflow:hidden}
-.hero h1{font-size:32px;margin:12px 0} .hero h1 span{color:#ffcc33}
-.btn-yellow{display:inline-block;background:#ffcc33;color:#0a1a4a;padding:12px 20px;border-radius:30px;font-weight:800;text-decoration:none;margin:14px 0}
-.btn-outline{display:inline-block;border:1.5px solid #8fa0cc;color:#c2cce6;padding:10px 18px;border-radius:30px;text-decoration:none}
-.stats{display:flex;gap:18px;margin-top:22px;border-top:1px solid rgba(255,255,255,0.15);padding:16px 0}
-.stat b{display:block;color:#ffcc33;font-size:18px} .stat span{font-size:11px;color:#a8b5d6}
-.card-float{background:white;color:#0a1a4a;border-radius:14px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,0.15);margin-top:16px;max-width:300px}
-.section{padding:36px 18px;background:white} .section.blue{background:#0a1a4a;color:white} .section.light{background:#f6f8ff}
-.t-item{border-left:2px solid #e8eaf2;padding:0 0 22px 18px;position:relative;margin-left:8px}
-.t-item::before{content:'';width:12px;height:12px;background:#ffcc33;border-radius:50%;position:absolute;left:-7px;top:0}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
-.gallery img{width:100%;height:110px;object-fit:cover;border-radius:10px;background:#e8eaf2}
+.drawer a{display:block;padding:16px 0;border-bottom:1px solid #f0f0f0;text-decoration:none;color:#0a1230;font-weight:700;font-size:16px}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;z-index:90} .overlay.show{display:block}
+.close-x{font-size:24px;text-align:right;cursor:pointer;padding-bottom:10px}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid #eee;display:flex;justify-content:space-around;padding:8px 0 12px;z-index:20}
+.bottom-nav div{text-align:center;font-size:11px;color:#888;font-weight:600} .bottom-nav div.active{color:#111} .bottom-nav span{font-size:22px;display:block}
 </style>
 </head>
 <body>
 <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-<header>
-<div class="logo-wrap">
-<img src="logo.png" onerror="this.src='https://via.placeholder.com/100?text=PIPA'">
-<div><b>Pipa Primary School</b><br><small style="color:#5b6a8a">Rooted in community. Growing in knowledge.</small></div>
-</div>
-<button class="menu-btn" onclick="openMenu()">☰</button>
-</header>
 <div class="drawer" id="drawer">
-<div style="text-align:right;font-size:22px;cursor:pointer" onclick="closeMenu()">✕</div>
-<a href="#" onclick="closeMenu()">Home</a>
-<a href="#our-story" onclick="closeMenu()">Our Story</a>
-<a href="#heritage" onclick="closeMenu()">Gallery</a>
+<div class="close-x" onclick="closeMenu()">✕</div>
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#about" onclick="closeMenu()">Our Story</a>
+<a href="#gallery" onclick="closeMenu()">Gallery</a>
 <a href="#learning" onclick="closeMenu()">Learning</a>
 <a href="#team" onclick="closeMenu()">Our Team</a>
 <a href="#support" onclick="closeMenu()">Support Us</a>
 <a href="#contact" onclick="closeMenu()">Contact Us</a>
 </div>
-
-<div class="hero">
-<div style="font-size:11px;color:#ffcc33">— ESTABLISHED IN 1938</div>
-<h1>A proud history.<br>A brighter <span>future.</span></h1>
-<p style="color:#c2cce6;font-size:14px">Welcome to Pipa Primary School, a community-rooted school in Maphalle Village, Limpopo.</p>
-<a href="#our-story" class="btn-yellow">Discover our story →</a>
-<a href="#support" class="btn-outline">Help our learners ♡</a>
-<div class="stats">
-<div class="stat"><b>1938</b><span>School</span></div>
-<div class="stat"><b>1491</b><span>Learners</span></div>
-<div class="stat"><b>Pre-R–7</b><span>Learning</span></div>
+<div class="top-header">
+<div class="logo"><img src="logo.png" onerror="this.src='https://via.placeholder.com/120x60?text=PIPA+LOGO'"></div>
+<button class="menu-btn" onclick="openMenu()">Menu ☰</button>
 </div>
-<div class="card-float"><b>Learn. Dream. Achieve.</b><p style="color:#5b6a8a;font-size:12px">Every learner has potential.</p></div>
-<div class="card-float"><b>Our future starts here.</b><p style="color:#5b6a8a;font-size:12px">Knowledge grows strong communities.</p></div>
-</div>
-
-<div class="section" id="our-story">
-<h2 style="font-size:48px;color:#d4a800">1938</h2>
-<h2>A school built by community</h2>
-<p style="color:#5b6a8a">Pipa began with a shared belief: children in Maphalle deserved access to education.</p>
-<div id="heritage" style="margin-top:20px">
-<div class="t-item"><b>1938 - The beginning</b><p style="color:#5b6a8a;font-size:13px">Established as Pipa Lower Primary School to bring education to Maphalle Village.</p></div>
-<div class="t-item"><b>1960s - A new name</b><p style="color:#5b6a8a;font-size:13px">Renamed in honour of the local community and continued to grow.</p></div>
-<div class="t-item"><b>1994 - New chapter</b><p style="color:#5b6a8a;font-size:13px">Became a no-fee Quintile 1 school ensuring every child can learn.</p></div>
-<div class="t-item"><b>2026 - Looking ahead</b><p style="color:#5b6a8a;font-size:13px">Today 1491 learners Grade R-7 with 41 educators, 25 classrooms.</p></div>
+<div class="hero" id="home">
+<div class="hero-bg"></div>
+<div class="badge">MAPHALLE VILLAGE • LIMPOPO • EST 1938</div>
+<div class="hero-content">
+<h1>Excellence in<br>innovative<br>quality basic <span>education</span></h1>
+<button class="discover" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Discover</button>
 </div>
 </div>
-
-<div class="section light" id="learning">
-<h2>Learning shaped by a proud legacy.</h2>
-<div class="gallery">
-<img src="https://via.placeholder.com/300x200?text=Classroom">
-<img src="https://via.placeholder.com/300x200?text=Learners">
-<img src="https://via.placeholder.com/300x200?text=Assembly">
-<img src="https://via.placeholder.com/300x200?text=Sports">
+<div class="stats-bar">
+<div class="stat"><span style="font-size:20px">🎓</span><b>1491</b><span>Learners</span></div>
+<div class="divider"></div>
+<div class="stat"><span style="font-size:20px">🧑‍🏫</span><b>41</b><span>Educators</span></div>
+<div class="divider"></div>
+<div class="stat"><span style="font-size:20px">🏫</span><b>25</b><span>Classrooms</span></div>
+<div class="divider"></div>
+<div class="stat"><span style="font-size:20px">🚫</span><b>No fees</b><span>Quintile 1</span></div>
+</div>
+<div class="news-section" id="about">
+<div class="news-header"><h2>Latest News & Updates</h2><a href="#">See all ›</a></div>
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400">
+<div>
+<span class="news-tag">NEWS</span>
+<h3>New Library Opens for Learners</h3>
+<p style="font-size:11px;color:#888">15 Oct 2024 • 2 min read</p>
+<p>A new library facility now available to support learning at Pipa Primary.</p>
 </div>
 </div>
-
-<div class="section" id="team">
-<h2>41 Educators. One mission.</h2>
-<p style="color:#5b6a8a">Meet the dedicated team.</p>
-<p style="margin-top:12px">👩‍🏫 Mrs. Makhubele - Principal<br>👨‍🏫 Mr. Ramalepe - Deputy<br>👩‍🏫 Ms. Bawuli - Grade R</p>
+<div style="margin-top:30px" id="gallery">
+<h2>A proud history. A brighter future.</h2>
+<p style="color:#555;margin-top:8px">Welcome to Pipa Primary School, Maphalle Village. Excellence since 1938.</p>
 </div>
-
-<div class="section blue" id="support">
-<h2>Help equip our learners for success.</h2>
-<p style="color:#c2cce6">Community members can help through donations of learning materials and sports kits.</p>
+<div style="margin-top:30px;padding-bottom:80px" id="contact">
+<h3>Contact Pipa Primary</h3>
+<p>Maphalle Village, Limpopo • 1491 Learners • No-fee</p>
+<p>© 2026 Pipa Primary - Arise and Shine</p>
 </div>
-
-<div class="section" id="contact">
-<h2>Contact Pipa Primary</h2>
-<p>Maphalle Village, Greater Letaba, Limpopo<br>1491 Learners • No-fee • Quintile 1</p>
 </div>
-
-<footer style="background:#060f2e;color:#8fa0cc;padding:20px;text-align:center;font-size:12px">© 2026 Pipa Primary School - Arise and Shine • Est 1938</footer>
-
+<div class="bottom-nav">
+<div class="active"><span>🏠</span>Home</div>
+<div><span>📅</span>Events</div>
+<div><span>🔔</span>Notices</div>
+<div><span>👤</span>Contact</div>
+</div>
 <script>
 function openMenu(){document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('show')}
 function closeMenu(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('show')}
-document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const id=this.getAttribute('href');if(id.length>1){e.preventDefault();document.querySelector(id)?.scrollIntoView({behavior:'smooth'})}})})
 </script>
 </body>
 </html>
